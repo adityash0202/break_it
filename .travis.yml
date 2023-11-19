@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t my_cpp_project .
+  - docker build -t secure-file-system .    
 
 script:
-  - docker run my_cpp_project 
+  - docker run -it secure-file-system
